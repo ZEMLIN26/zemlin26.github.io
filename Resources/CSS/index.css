@@ -1,0 +1,122 @@
+header {
+    display: flex; /*this makes inline-block possiblke*/
+    justify-content: space-between; /* or center/space-around if you like */
+    align-items: center;
+}
+
+.location{
+    text-align:center;
+    background-color:orange;
+}
+
+.location a{
+    text-align: center;
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.location a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.navigation{
+    text-align: center;
+
+    background-color: lightblue;
+    padding: 10px;
+    
+}
+
+.navigation li{
+    text-align: center justify;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: yellow;
+    border-radius: 15;
+}
+
+.logo, .navigation{
+    height:100px;
+    box-sizing: border-box;
+    display: inline-block;
+    width:50%;
+}
+
+.logo{
+    background-image:url("../images/logo.png");
+    background-repeat: repeat-x;
+    background-size: 100px 100px;
+}
+.logo img{
+    position:relative;
+    left:30%;
+    height:100px;
+    width:100px;
+}
+
+.special-offer img{
+    height:200px;
+    max-width:100%;
+}
+
+.special-offer div{
+    display:inline-block;
+    height:400px;
+    vertical-align: top;
+}
+
+.special-offer h1{
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 30px 30px 0 0;;
+    color:blueviolet;
+    background-color:blanchedalmond;
+}
+
+#monday {
+    background-color: lightcoral;
+    width:25%;
+}
+
+#tuesday {
+    background-color: lightgreen;
+    width:25%;
+}
+
+#wednesday {
+    background-color: lightblue;
+    width:25%;
+}
+
+#thursday {
+    background-color: lightyellow;
+    width:25%;
+}
+
+#friday {
+    background-color: lightpink;
+    width:25%;
+}
+
+#saturday {
+    background-color: lightgray;
+    width:25%;
+}
+
+#sunday {
+    background-color: lightcyan;
+    width:25%;
+}
+
+#student-discount {
+    background-color: lightgoldenrodyellow;
+    width:25%;
+}   
+
+footer{
+    padding-top:50px;
+    background-color: lightpink;
+}
