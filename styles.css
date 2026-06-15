@@ -50,6 +50,7 @@
 .nav-icon {
   width: 24px;
   text-align: center;
+  font-size: 16px;
 }
 
 .nav-menu a.active {
@@ -195,11 +196,12 @@
 
 .project-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .project-card {
-  flex: 1;
+  flex: 1 1 240px;
   padding: 20px;
   border: 1px solid #eee;
   border-radius: 16px;
@@ -332,4 +334,124 @@
   border-radius: 999px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.skill-group + .skill-group {
+  margin-top: 24px;
+}
+
+.skill-group h3 {
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.content-section {
+  background-color: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.content-section > h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  color: #555;
+  line-height: 1.6;
+}
+
+.timeline-item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.timeline-heading h3 {
+  color: #222;
+  margin: 0 0 4px;
+}
+
+.timeline-heading > span {
+  color: #6b35d8;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.organization {
+  color: #17b06e;
+  font-weight: 600;
+  margin: 0;
+}
+
+.timeline-item ul {
+  margin-bottom: 0;
+}
+
+.compact-item .timeline-heading {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .page-layout {
+    display: block;
+  }
+
+  .sidebar {
+    width: auto;
+    border-right: 0;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    padding: 24px;
+  }
+
+  .about-card,
+  .contact-section {
+    display: block;
+  }
+
+  .about-image {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content,
+  .about-card,
+  .projects-section,
+  .skills-section,
+  .content-section,
+  .contact-section {
+    padding: 20px;
+  }
+
+  .timeline-heading {
+    display: block;
+  }
+
+  .timeline-heading > span {
+    display: inline-block;
+    margin-top: 6px;
+  }
 }
